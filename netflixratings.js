@@ -17,7 +17,7 @@ if ($request.headers != undefined) {
     let bodyObject = JSON.parse(body);
     let movieID = bodyObject.paths[0][1];
     let title = bodyObject.value.videos[movieID].summary.title;
-    let requestURL = `http://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=132e834f`;
+    let requestURL = `http://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=a8aadc91`;
     $httpClient.get(requestURL, function(error, response, data) {
         if (error){
             $done({});                   
